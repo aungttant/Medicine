@@ -1,0 +1,73 @@
+#preloader{
+    background:white url('../img/gif.gif') no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.nav-link{
+    font-size: 18px;
+    border: solid;
+    border-radius: 5px;
+}
+.nav-item{
+	padding: 15px 40px 0px 10px;
+    font-family: cursive;
+   
+}
+#nav{
+    color: white;
+}
+#nav:hover{
+    color: green;
+    background: white;
+}
+#nav1{
+    color: white;
+}
+#nav1:hover{
+    color: green;
+}
+
+
+
+/*Footer*/
+.footer{
+    width: 100%;
+    font-size: 15px;
+    background-color: #1aab40;
+    text-align: center;
+  }
+.footer div span a{
+    
+    text-decoration: none;
+  }
+  #mail:hover{
+      text-decoration: none;
+  }
+.fa-facebook-square{
+    color: #696969;
+    font-size: 40px;  
+}
+.fa-facebook-square:hover{
+    color: blue;
+}
+.fa-youtube{
+    color: #696969;
+    font-size: 44px;  
+}
+.fa-youtube:hover{
+   color: red;
+}
+.fa-twitter-square{
+    color: #696969;
+    font-size: 40px;  
+}
+.fa-twitter-square:hover{
+   color: #00bfff;
+}
+
+
+
+
