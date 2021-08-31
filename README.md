@@ -1,3 +1,4 @@
 # Medicine
-Kaung Htet Kyaw : https://github.com/ken100000
+zarchisint
+https://github.com/VJO3
 www.business.aungttant.com
