@@ -9,9 +9,10 @@
 a{
     color: white;
 }
-a:hover{
-	color: black;
+#arrow:hover{
+    color: black;
 }
+
 /*Footer*/
 .footer{
     width: 100%;
@@ -19,8 +20,7 @@ a:hover{
     background-color: #1aab40;
     text-align: center;
   }
-.footer div span a{
-    
+.footer div span a{    
     text-decoration: none;
   }
   #mail:hover{
@@ -91,7 +91,7 @@ a:hover{
  .navbar-links li:hover{
  	background-color: black;
  }
- /* .toggle-button{
+  .toggle-button{
  	position: absolute;
  	top: .75rem;
  	right: 1rem;
@@ -106,8 +106,8 @@ a:hover{
  	width: 100%;
  	background-color: white;
  	border-radius: 10px;
- } */
-/* @media (max-width: 600px) {
+ } 
+ @media (max-width: 600px) {
  	.toggle-button {
  		display: flex;
  	}
@@ -132,4 +132,20 @@ a:hover{
  .navbar-links .active {
  	display: flex;
  } 
-} */
+} 
+
+.collapse li {
+     list-style: none;
+     text-align: center;
+     border-style: solid;
+     border-radius: 10px;
+     margin-right: 10px;
+     font-family: monospace;
+     font-size: 15px;
+     padding: 10px;
+     margin-top: 10px;
+ }
+ .collapse li:hover{
+     background-color: black;
+
+ }
