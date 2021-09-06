@@ -1,5 +1,5 @@
 #preloader{
-    background:white url('../img/gif.gif') no-repeat center center;
+    background:#f5edf2 url('../img/gif.gif') no-repeat center center;
     background-size: 15%;
     height: 100vh;
     width: 100%;
@@ -7,10 +7,14 @@
     z-index: 100;
 }
 a{
-    color: white;
+    color: #f5edf2;
+}
+.container a {
+    color: #0a0a0a;
+    font-family: monospace;
 }
 #arrow:hover{
-    color: black;
+    color: #0a0a0a;
 }
 
 /*Footer*/
@@ -48,7 +52,7 @@ a{
    color: #00bfff;
 }
 #ourname{
-    color: black;
+    color: #0a0a0a;
 
 }
 
@@ -56,23 +60,23 @@ a{
  box-sizing: border-box;
 }
  body{
- 	margin: 0;
- 	padding: 0;
+    margin: 0;
+    padding: 0;
  }
  .navbar{
- 	display: flex;
- 	justify-content: space-between;
- 	align-items: center;
- 	background-color: #1aab40;
- 	color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1aab40;
+    color: #f5edf2;
  }
  .brand-title{
- 	font-size: 25px;
+    font-size: 25px;
  }
  .navbar-links ul {
- 	margin: 0;
- 	padding: 0;
- 	display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
  }
  .navbar-links li {
      list-style: none;
@@ -83,54 +87,54 @@ a{
      font-size: 15px;
  }
  .navbar-links li a {
- 	text-decoration: none;
- 	color: white;
- 	padding: 1rem;
- 	display: block;
+    text-decoration: none;
+    color: #f5edf2;
+    padding: 1rem;
+    display: block;
  }
  .navbar-links li:hover{
- 	background-color: black;
+    background-color: #0a0a0a;
  }
   .toggle-button{
- 	position: absolute;
- 	top: .75rem;
- 	right: 1rem;
- 	display: none;
- 	flex-direction: column;
- 	justify-content: space-between;
- 	width: 30px;
- 	height: 21px;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
  }
  .toggle-button .bar{
- 	height: 3px;
- 	width: 100%;
- 	background-color: white;
- 	border-radius: 10px;
+    height: 3px;
+    width: 100%;
+    background-color: #f5edf2;
+    border-radius: 10px;
  } 
  @media (max-width: 600px) {
- 	.toggle-button {
- 		display: flex;
- 	}
+    .toggle-button {
+        display: flex;
+    }
  .navbar-links {
- 	display: none;
+    display: none;
      width: 100%;
  }
  .navbar {
- 	flex-direction: column;
- 	align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
  }
  .navbar-links ul {
- 	width: 100%;
- 	flex-direction: column;
+    width: 100%;
+    flex-direction: column;
  }
  .navbar-links li{
- 	text-align: center;
+    text-align: center;
  }
  .navbar-links li a{
- 	padding: .5rem 1rem;
+    padding: .5rem 1rem;
  }
  .navbar-links .active {
- 	display: flex;
+    display: flex;
  } 
 } 
 
@@ -146,6 +150,77 @@ a{
      margin-top: 10px;
  }
  .collapse li:hover{
-     background-color: black;
+     background-color: #0a0a0a;
 
  }
+ .container h3{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: solid;
+    border-color: #1aab40;   
+    font-family: serif;
+ }
+ .container i{
+    color: #1aab40;
+ }
+ .container p{
+    font-family: monospace;
+ }
+ .progress{
+    font-size: 15px;
+    font-family: monospace;
+    margin-top: 3rem;
+ }
+ .carousel-inner h5{
+    border-bottom: solid;
+    border-color: #f5edf2;
+    background-color: #0a0a0a;
+    font-family: serif;
+ }
+ .carousel-inner{
+    margin: 3%;
+ }
+ .carousel-inner p{
+    color: #0a0a0a;
+    background-color: #f5edf2;
+    font-family: monospace;
+ }
+ .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+ }
+
+.fruits {
+ margin: 3%;
+position: relative;
+}
+  
+.first-txt {
+text-align: center;
+position: absolute;
+font-family: monospace;
+top: 200px;
+left: 50px;
+background-color:  #ffffff; 
+opacity: .6;
+ }
+  
+.display-4{
+    margin-top: 1rem;
+   border-left: solid;
+border-color: #1aab40;
+font-family: serif;  
+}
+.sleep{
+    margin: 3%;
+}
+#sleep{
+    font-family: monospace;
+}
+iframe{
+    margin-left: 2rem;
+}
+#hand{
+    margin: 3%;
+}
