@@ -134,7 +134,7 @@ position: absolute;
 font-family: monospace;
 top: 200px;
 left: 50px;
-background-color:  #ffffff; 
+background-color:  #f5edf2; 
 opacity: .6;
  }
   
@@ -155,4 +155,50 @@ iframe{
 }
 #hand{
     margin: 3%;
+}
+ .about {
+text-align: center;
+position: absolute;
+font-family: monospace;
+top: 200px;
+background-color: #0a0a0a; 
+opacity: .7;
+color: #f5edf2;
+width: 100%;
+ }
+.container h2{
+  font-family: serif;
+  border-bottom: solid;
+  max-width: 100px;
+  border-color: #1aab40;
+}
+#do{
+  max-width: 180px; 
+}
+.container p{
+    font-family: monospace;
+    font-size: 18px;
+}
+.container ul li{
+     font-family: monospace;
+    font-size: 15px;
+}
+.icon{
+    padding: 1px;
+}
+#rx{
+    color: #1aab40;
+}
+#appointment{
+    color: #1aab40;
+}
+#advice{
+    color: #1aab40;
+}
+#location{
+    border-bottom: solid;
+    border-color: #1aab40;
+    max-width: 220px;
+    margin: 1rem;
+    font-family: serif;
 }
