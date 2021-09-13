@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medi-Rizsh</title>
+    <title>Medi-Rizsh : Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" charset="utf-8">
 
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" style="width: 40px;">
@@ -15,47 +15,51 @@
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/homeStyle.css">
-    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <script type="text/javascript" src="js/script.js"></script>
 
-    <script src defer="js/script.js"></script>
-    <nav class="navbar navbar-expand-lg navbar-light bg-success sticky-top nav-menu">
-        <div class="container">
-            <a id="nav1" class="navbar-brand" href="">Medi-Rizsh</a>
-            <button class="navbar-toggler  btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <style>
+        hr {
+            width: 200px;
+            background-color: #f5edf2;
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-success nav-menu">
+
+        <div class="brand-title">Medi-Rizsh<img src="img/medlogo.png" alt="" width="100px" height="80px"></div>
+
+        <button class="navbar-toggler  btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html"><b>Home</b><span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="about.html"><b>About Us</b></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="service.html"><b>Services</b></a>
-                    </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="healthcare.html"><b>Knowledge</b></a>
-                    </li>
-                    <li class="nav-item active">
-                        <form class="form-inline">
-                            <button class="btn btn-outline-light btn-lg" type="submit"><a id="bt" href="signin.html">Sign In</a></button>
-                        </form>
-                    </li>
-                    <li class="nav-item active">
-                        <form class="form-inline">
-                            <button class="btn btn-outline-light btn-lg" type="submit"><a id="bt" href="signup.html">Get Started</a></button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="healthcare.html">Healthcares</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <a href="signin.html" id="arrow"><i class="fas fa-sign-in-alt fa-2x"></i></a>
+
+            </ul>
         </div>
+
     </nav>
+
+
+
 </head>
 
 <body>
+
     <div id="preloader"></div>
     <!-- home page coding by shwe-htet  -->
     <div class="container-fluid top-photo">
@@ -78,9 +82,21 @@
             <div class="circle"></div>
         </div>
     </div>
+    <div class="container-fluid choice-container">
+        <div class="resetOrFevers ">
+            <div class="text2">Available Drugs</div>
+            <div class="text1">Choose By Fevers</div>
+            <div class="choice-btn"></div>
+        </div>
+    </div>
     <div class="container-fluid home-container">
         <div class="row w-100">
-            <div class="drugs-store col-12 ">
+            <div class="drugs-store-container">
+                <div class="item-checker">
+                    There are 44 items aviable now.
+                </div>
+                <div class="drugs-store col-12 ">
+                </div>
             </div>
             <div class="choiceFever col-4">
                 <h5>Fever Types</h5>
@@ -91,37 +107,31 @@
                 <div id="eye" class="fevers">Eye ,Ears and Throat</div>
             </div>
         </div>
-        <div class="resetOrFevers ">
-            <div class="text2">Available Drugs</div>
-            <div class="text1">Choose By Fevers</div>
-            <div class="choice-btn"></div>
-        </div>
     </div>
     <div class="container-fluid prefooter">
         <h3>We are trying the best for your health.</h3>
     </div>
-    <h5>I need js file to complete my page.</h5>
-
-    <!-- home page coding by shwe-htet  -->
 </body>
+
+
 <footer class="footer mt-auto py-1">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <h4 style="color: black; font-family: monospace;">Medi-Rizsh
+                <h4 style="color: #0a0a0a; font-family: monospace;">Medi-Rizsh
                     <hr>
                 </h4>
                 <img src="img/medlogo.png" alt="medsnake" height="100px" width="100px" ;>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <h4 style="color: black; font-family: monospace;">Contact Us
+                <h4 style="color: #0a0a0a; font-family: monospace;">Contact Us
                     <hr>
                 </h4>
-                <a id="mail" href="#" style="color: black; font-family: monospace; font-size: 17px;">medirizsh@gmail.com</a>
-                <p style="color: black; font-family: monospace; font-size: 17px;">+959 988 000 000</p>
+                <a id="mail" href="#" style="color: #0a0a0a; font-family: monospace; font-size: 17px;">medirizsh@gmail.com</a>
+                <p style="color: #0a0a0a; font-family: monospace; font-size: 17px;">+959 988 000 000</p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
-                <h4 style="color: black; font-family: monospace;">Follow Us
+                <h4 style="color: #0a0a0a; font-family: monospace;">Follow Us
                     <hr>
                 </h4>
                 <a href="https://www.facebook.com/zarchi.afsheen.7" target="blank"><i class="fab fa-facebook-square"></i></a>
@@ -130,7 +140,7 @@
             </div>
         </div>
 
-        <span style="color: black;">&#169; 2021 <a href="#" id="ourname" target="blank">Medi-Rizsh</a> All rights Reserved.</span>
+        <span style="color: #0a0a0a;">&#169; 2021 <a href="#" id="ourname" target="blank">Medi-Rizsh</a> All rights Reserved.</span>
     </div>
 </footer>
 

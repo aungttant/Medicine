@@ -284,13 +284,29 @@ resetOrFevers.addEventListener("click", () => {
     drugStore.classList.remove("drugs-display");
     displayMenuItems(medicine);
     choiceFever.classList.toggle("display-fevers");
+    itemChecker.innerHTML = `There are ${medicine.length} items available now.`;
+    displayAlter();
 });
-
 // DOM
+
 window.addEventListener("DOMContentLoaded", function() {
     displayMenuItems(medicine);
+    displayAlter();
+    // pageScroll();
 });
 
+// function?
+const displayAlter = () => {
+    const allDrugs = drugStore.children;
+    let counter = 0;
+    var a = setInterval(() => {
+        allDrugs[counter].classList.add("drugs-display");
+        counter++;
+        if (counter === allDrugs.length) {
+            clearInterval(a);
+        }
+    }, 100);
+}
 const displayMenuItems = (menuItems) => {
     let displayMenu = menuItems.map(function(item) {
         return `
@@ -301,7 +317,7 @@ const displayMenuItems = (menuItems) => {
                 <h4>${item.title}</h4>
                     <div class="price">${item.price}ks</div>
                     <div class="description">
-                    ${item.desc}</div>
+                   <span> ${item.title}</span> can be used for ${item.desc}</div>
                 </div>`;
     });
     displayMenu = displayMenu.join("");
@@ -310,14 +326,16 @@ const displayMenuItems = (menuItems) => {
 fevers.forEach((btn) => {
     btn.addEventListener("click", (e) => {
         homeContainer.style.height = "100%";
-        drugStore.classList.add("drugs-display");
         drugStore.classList.remove("col-12");
         drugStore.classList.add("col-8");
         const category = e.currentTarget.id;
-        const newMenu = medicine.filter(newItem => {
+        const newMedicine = medicine.filter(newItem => {
             return newItem.category === category;
         })
-        displayMenuItems(newMenu);
+        displayMenuItems(newMedicine);
+        displayAlter();
+        itemChecker.innerHTML = `There are ${newMedicine.length} items available now.`;
+        // console.log(allDrugs.length)
     })
 });
 
@@ -337,3 +355,11 @@ setInterval(() => {
     secondPhoto.classList.toggle("hide");
     circle[1].classList.toggle("bg-red");
 }, 5000);
+// item - check
+const itemChecker = document.querySelector(".item-checker");
+itemChecker.innerHTML = `There are ${medicine.length} items available now.`;
+// loader
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function() {
+    loader.style.display = "none";
+})
